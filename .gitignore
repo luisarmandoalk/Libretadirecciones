@@ -1,3 +1,4 @@
+
 import java.io.*;
 public class tarea {
 
@@ -10,12 +11,12 @@ String opcion;
 File Guardar =new File("C:/Users/Administrator/libreta-direcciones/.hg/archivo.txt");
 FileWriter Guardx=new FileWriter(Guardar);
 
-System.out.print(" LIBRETA DE DIRECCIONES. Por favor elija una de las opciones: ");
+System.out.print(" LIBRETA DE DIRECCIONES. \n Por favor elija una de las opciones: ");
 int num;
 do {
-System.out.print(" 1.- Ingreso Nuevo:");
-System.out.print(" 2.- Consulta de Contactos: ");
-System.out.print(" 3.- Salir: ");
+System.out.print("\n 1.- Ingreso Nuevo:");
+System.out.print("\n 2.- Consulta de Contactos: ");
+System.out.print("\n 3.- Salir: ");
 String texto4=y.readLine();
 num=Integer.parseInt(texto4);
 
@@ -34,12 +35,10 @@ String am=y.readLine();
 System.out.print("Nombre(s): ");
 String nom=y.readLine();
 
-System.out.print(" ESCRIBA LA DIRECCION POR FAVOR");
-System.out.print(" Calle: ");
+
+System.out.print("Dirección : ");
 String calle=y.readLine();
 
-System.out.print("Número: ");
-String texto1=y.readLine();
 
 System.out.print("Barrio: ");
 String col=y.readLine();
@@ -47,15 +46,13 @@ String col=y.readLine();
 System.out.print("Ciudad: ");
 String ciu=y.readLine();
 
-System.out.print("Mail: ");
-String est=y.readLine();
 
-System.out.print(" ESCRIBA EL NUMERO TELEFONICO POR FAVOR: ");
 System.out.print("Celular: ");
-String texto2=y.readLine();
-int lada=Integer.parseInt(texto2);
+String tel=y.readLine();
 
-
+System.out.print("E-Mail: ");
+String mail=y.readLine();
+//int tel=Integer.parseInt(texto3);
 
 System.out.print(" ¡LISTO! ");
 System.out.println(" "+nom+" "+ap+" "+am+". HA SIDO AGREGADO CON TODOS SUS DATOS EXITOSAMENTE");
@@ -66,7 +63,7 @@ try{
 
 if(Guardar !=null){
 
-Guardx.write(nom+" "+ap+" "+am+ " - "+calle +" "+texto1+" "+col+", " +ciu+", "+est+ " - "+lada+" "+tel+" ");
+Guardx.write(nom+" "+ap+" "+am+ " DIRECCIÖN "+calle +"  "+col+", " +ciu+",  -  "+tel+", MAIL "+mail +" "+"\n");
 }
 }
 
@@ -93,7 +90,7 @@ br = new BufferedReader(fr);
 
 String linea;
 while((linea=br.readLine())!=null)
-System.out.println(linea);
+System.out.println("\n"+linea);
 }
 catch(Exception e){
 e.printStackTrace();
@@ -120,5 +117,7 @@ System.out.print(" ELIJA UNA OPCIÓN QUE EXISTA EN EL MENÚ:");
 
 }
 }
+
+
 
 
