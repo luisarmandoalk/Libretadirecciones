@@ -47,7 +47,7 @@ String col=y.readLine();
 System.out.print("Ciudad: ");
 String ciu=y.readLine();
 
-System.out.print("Departamento: ");
+System.out.print("Mail: ");
 String est=y.readLine();
 
 System.out.print(" ESCRIBA EL NUMERO TELEFONICO POR FAVOR: ");
@@ -55,9 +55,7 @@ System.out.print("Celular: ");
 String texto2=y.readLine();
 int lada=Integer.parseInt(texto2);
 
-System.out.print("Fijo1: ");
-String texto3=y.readLine();
-int tel=Integer.parseInt(texto3);
+
 
 System.out.print(" ¡LISTO! ");
 System.out.println(" "+nom+" "+ap+" "+am+". HA SIDO AGREGADO CON TODOS SUS DATOS EXITOSAMENTE");
